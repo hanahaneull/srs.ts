@@ -1,7 +1,7 @@
 {
   "name": "srs.ts",
   "description": "sing-box SRS rule-set compiler/decompiler for JavaScript runtimes",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "files": [
     "dist",
