@@ -1,12 +1,19 @@
 {
   "name": "srs.ts",
   "description": "sing-box SRS rule-set compiler/decompiler for JavaScript runtimes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "files": [
     "dist",
     "README.md"
   ],
+  "homepage": "https://github.com/hanahaneull/srs.ts",
+  "author": {
+    "email": "hana@disroot.org",
+    "name": "Haneul Seong",
+    "url": "https://github.com/hanahaneull"
+  },
+  "license": "GPL-3.0-only",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {

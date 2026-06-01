@@ -1,5 +1,8 @@
 # srs.ts
 
+[![npm version](https://badge.fury.io/js/srs.ts.svg?icon=si%3Anpm&icon_color=%23c061cb)](https://www.npmjs.com/package/srs.ts) ![GitHub License](https://img.shields.io/github/license/hanahaneull/srs.ts)
+
+
 TypeScript implementation of the [sing-box](https://github.com/SagerNet/sing-box) binary rule-set (`.srs`) compiler and decompiler.
 
 This project is a small JavaScript/TypeScript library for working with sing-box SRS files without running the Go `sing-box` binary. It mirrors the binary rule-set format implemented by [sing-box](https://github.com/SagerNet/sing-box), accepts the same plain rule-set JSON shape, and returns `Uint8Array` data that can be used in modern JavaScript runtimes.
