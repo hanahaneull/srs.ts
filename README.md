@@ -85,6 +85,22 @@ const decoded = decompile(srsBytes);
 
 `compile()` returns a `Uint8Array` containing the complete `.srs` file contents. `decompile()` accepts a `Uint8Array` containing `.srs` bytes and returns plain rule-set JSON.
 
+## CLI
+
+The package also installs an `srs.ts` command for use with `npx`:
+
+```sh
+npx srs.ts compile rules.srs
+npx srs.ts decompile rules.json
+```
+
+You can pass an explicit output path as a second argument:
+
+```sh
+npx srs.ts compile source.json output.srs
+npx srs.ts decompile source.srs output.json
+```
+
 ## API
 
 ```ts
