@@ -1,0 +1,35 @@
+{
+  "name": "srs.ts",
+  "description": "sing-box SRS rule-set compiler/decompiler for JavaScript runtimes",
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "bunup -f esm,cjs --minify",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "bunup": "^0.16.31",
+    "fflate": "^0.8.3",
+    "np": "*",
+    "typescript": "^5.8.0"
+  }
+}
